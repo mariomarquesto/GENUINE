@@ -1,71 +1,107 @@
-# Getting Started with Create React App
+annotation-tool
+Este proyecto es una herramienta de anotación basada en React, diseñada para ofrecer una experiencia sin interrupciones en la gestión de anotaciones. Incluye varias bibliotecas y herramientas para mejorar el desarrollo y la experiencia del usuario.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tabla de Contenidos
+Instalación
+Scripts Disponibles
+Dependencias
+Dependencias de Desarrollo
+Configuración
+Uso
+Desarrollo
+Construcción
+Pruebas
+Eject
+Licencia
+Instalación
+Para comenzar con este proyecto, clona el repositorio e instala las dependencias:
 
-## Available Scripts
+bash
+Copiar código
+git clone https://github.com/yourusername/annotation-tool.git
+cd annotation-tool
+npm install
+Scripts Disponibles
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-In the project directory, you can run:
+npm start
+Ejecuta la aplicación en modo de desarrollo.
+Abre http://localhost:3000 para verlo en tu navegador.
 
-### `npm start`
+La página se recargará cuando hagas cambios.
+También puedes ver cualquier error de lint en la consola.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm build
+Construye la aplicación para producción en la carpeta build.
+Agrupa correctamente React en modo de producción y optimiza la construcción para el mejor rendimiento.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La construcción está minificada y los nombres de los archivos incluyen hashes.
+¡Tu aplicación está lista para ser desplegada!
 
-### `npm test`
+npm test
+Lanza el corredor de pruebas en modo interactivo.
+Consulta la sección sobre ejecutar pruebas para más información.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm eject
+Nota: esta es una operación irreversible. ¡Una vez que ejectas, no puedes volver atrás!
 
-### `npm run build`
+Si no estás satisfecho con la herramienta de construcción y las opciones de configuración, puedes eject en cualquier momento. Este comando eliminará la dependencia única de construcción de tu proyecto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En su lugar, copiará todos los archivos de configuración y las dependencias transitivas (webpack, Babel, ESLint, etc.) directamente en tu proyecto para que tengas control total sobre ellos. Todos los comandos excepto eject seguirán funcionando, pero apuntarán a los scripts copiados para que puedas modificarlos. En este punto, estás por tu cuenta.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dependencias
+@testing-library/jest-dom: ^5.16.4
+@testing-library/react: ^13.2.0
+@testing-library/user-event: ^13.5.0
+react: ^18.1.0
+react-dom: ^18.1.0
+react-icons: ^4.3.1
+react-router-dom: ^6.3.0
+react-scripts: 5.0.1
+web-vitals: ^2.1.4
+Dependencias de Desarrollo
+autoprefixer: ^10.4.7
+postcss: ^8.4.13
+tailwindcss: ^3.0.24
+Configuración
+El proyecto utiliza ESLint para linting, con configuraciones extendidas de react-app y react-app/jest. El campo browserslist especifica las versiones de navegadores soportados tanto para los entornos de producción como de desarrollo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Uso
+Para utilizar esta herramienta de anotación, sigue estos pasos:
 
-### `npm run eject`
+Instalar Dependencias: Asegúrate de que todas las dependencias estén instaladas ejecutando npm install.
+Iniciar el Servidor de Desarrollo: Ejecuta npm start para lanzar el servidor de desarrollo.
+Construir para Producción: Ejecuta npm build para crear una construcción de producción.
+Ejecutar Pruebas: Utiliza npm test para ejecutar las pruebas.
+Desarrollo
+Durante el desarrollo, utiliza las siguientes características:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Recarga en Caliente de React: El servidor de desarrollo soporta recarga en caliente, por lo que tus cambios se reflejarán inmediatamente en el navegador.
+TailwindCSS: El proyecto está configurado con TailwindCSS para el estilo. Personaliza tus estilos en el archivo tailwind.config.js y añade clases CSS personalizadas en los archivos de componentes.
+ESLint: Analiza tu código en busca de errores y adhierete a los estándares de codificación utilizando ESLint.
+Construcción
+Para crear una construcción de producción, ejecuta:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copiar código
+npm build
+Esto generará archivos optimizados y minificados en el directorio build, listos para ser desplegados.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Pruebas
+Ejecuta el siguiente comando para ejecutar el conjunto de pruebas:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copiar código
+npm test
+Esto lanzará el corredor de pruebas en modo interactivo. Utiliza esto para asegurarte de que tus componentes funcionen como se espera.
 
-## Learn More
+Eject
+Si necesitas personalizar la configuración, puedes ejectar el proyecto ejecutando:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copiar código
+npm eject
+Nota: Ejectar es una operación irreversible y no puede deshacerse.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# GENUINE
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
