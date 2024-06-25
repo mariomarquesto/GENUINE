@@ -1,0 +1,13 @@
+.unete-background {
+  background-image: url("../assets/images/UneteANosotros.png");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  height: 100vh; /* Ajusta la altura del fondo al 100% del viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Color del texto para contraste */
+  border-radius: 20px 20px 20px 20px;
+}
+

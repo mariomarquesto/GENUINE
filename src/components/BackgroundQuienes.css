@@ -1,0 +1,58 @@
+.background-quienes-container {
+    background: linear-gradient(180deg, #D5E6F7 0%, #FFFFFF 37.5%);
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px; /* Espacio superior para la imagen */
+  }
+  
+  .central-image {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .central-text {
+    margin-top: 20px; /* Espacio entre la imagen y el texto */
+    font-family: "Outfit", sans-serif; /* Familia tipográfica */
+    font-size: 52px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    line-height: 62px; /* Altura de línea */
+    color: #133072; /* Color del texto */
+    max-width: 80%;
+  }
+  
+  /* Media queries para hacerlo responsivo */
+  @media (max-width: 1200px) {
+    .central-image {
+      max-width: 70%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .central-image {
+      max-width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .central-image {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .central-image {
+      max-width: 80%;
+      margin-top: 10px;
+    }
+  
+    .central-text {
+      font-size: 36px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+      padding: 0 10px; /* Añadir padding lateral */
+    }
+  }
+  

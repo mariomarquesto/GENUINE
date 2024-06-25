@@ -1,0 +1,17 @@
+.Digital {
+    background: linear-gradient(180deg, #d5e6f7 0%, #d5adfb 100%);
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    max-width: 1204px; /* Ancho máximo para la tarjeta */
+    padding: 20px; /* Añadir algo de padding */
+    border-radius: 20px 20px 0px 0px;
+    color: #133072;
+    font-family: Outfit, sans-serif; /* Asegúrate de que Outfit esté importada */
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 69px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para un mejor contraste */
+  }
+
+  
+  

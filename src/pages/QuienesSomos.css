@@ -1,0 +1,38 @@
+.quienes-background {
+    background: linear-gradient(180deg, #D5E6F7 0%, #FFFFFF 37.5%);
+    height: 1042px; /* Ajusta la altura del fondo al 100% del viewport */
+    width: 100%; /* Ancho al 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Color del texto para contraste */
+    position: relative; /* Necesario para posicionar elementos absolutos dentro */
+  }
+  
+  .quienes-background img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    border-radius: 8px; /* Borde redondeado para la imagen */
+    position: absolute; /* Posición absoluta dentro del contenedor */
+    top: 0; /* Alinea la imagen en la parte superior del contenedor */
+    left: 50%; /* Centra la imagen horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+  }
+  
+  .quienes-background h1 {
+    position: absolute; /* Posicionamiento absoluto con respecto al contenedor */
+    width: 100%; /* Ancho específico */
+    height: auto; /* Altura específica */
+    top: 348px; /* Distancia desde la parte superior */
+    left: 0; /* Distancia desde la izquierda */
+    text-align: center; /* Centra el texto */
+    opacity: 1; /* Opacidad completa */
+    color: #333; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+  }
+  
+  .borde {
+    border: 3px solid #133072;
+  }
+  
